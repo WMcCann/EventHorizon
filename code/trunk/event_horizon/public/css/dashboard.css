@@ -1,0 +1,49 @@
+.brand-name {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img-fans {
+    text-align: center;
+}
+
+.data-fans-number {
+    padding-top: 10px;
+}
+
+.data-fans-scale {
+    padding-top: 18px;
+}
+
+
+.number-fans {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.number-fans-legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+span.scale-fans {
+    font-weight: bold;
+}
+
+.social-name {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.brand-logo {
+    text-align: center;
+}
+
+span.brand-w-img {
+    font-size: 40px;
+    font-weight: bold;
+}

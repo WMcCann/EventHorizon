@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} > Painel{% endblock %}
+
+{% block css %}
+  <link href="{% static "css/dashboard.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block js %}
+  <script src="{% static "lib/highcharts/js/highcharts.js" %}"></script>
+  <script src="{% static "lib/highcharts/js/modules/exporting.js" %}"></script>
+  <script src="{% static "js/dash.js" %}"></script>
+  <script type="text/javascript">
+    jQuery(function () {
+      {% for brand in brands %}
+        // Line chart
+        jQuery('#line-{{ forloop.counter }}').highcharts({
+          credits: {
+            enabled: false
+          },
+          chart: {
+            height: 200,
+            type: 'line'
+          },
+          title: {
+            text: 'Int. / Post'
+          },
+          xAxis: {
+            categories: [
+              {% for category in brand.interaction.categories %}
+                {% if not forloop.last %}
+                  '{{ category }}',
+                {% else %}
+                  '{{ category }}'
+                {% endif %}
+              {% endfor %}
+            ],
+            labels: {
+              rotation: -90
+            }
+          },
+          yAxis: {
+            min: 0,
+            title: {
+              text: null
+            },
+            labels: false
+          },
+          legend: {
+            enabled: false
+          },
+          series: [{
+            name: 'Interações',
+            data: [
+              {% for serie in brand.interaction.series %}
+                {% if not forloop.last %}
+                  {{ serie }},
+                {% else %}
+                  {{ serie }}
+                {% endif %}
+              {% endfor %}
+            ]
+          }]
+        });
+      {% endfor %}
+        
+      {% for brand in brands %}
+        // Donut
+        jQuery('#donut-{{ forloop.counter }}').highcharts({
+          credits: {
+            enabled: false
+          },
+          chart: {
+            height: 300,
+            type: 'pie'
+          },
+          title: {
+            text: null
+          },
+          plotOptions: {
+            pie: {
+              innerSize: '70%',
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: false
+              },
+              showInLegend: true
+            }
+          },
+          series: [{
+            name: 'Interações',
+            data: [
+              {% for type, value in brand.type.items %}
+                {% if not forloop.last %}
+                  ['{{ type }}', {{ value }}],
+                {% else %}
+                  ['{{ type }}', {{ value }}]
+                {% endif %}
+              {% endfor %}
+            ]
+          }]
+        });
+      {% endfor %}
+    });
+  </script>
+{% endblock %}
+
+{% block menu %}
+  <li id="menu-select-brand"><a href="{% url 'select_brand' %}">Selecionar Marca</a></li>
+  <li id="menu-dashboard"><a href="{% url 'dashboard' dash_id %}">Dashboard</a></li>
+{% endblock %}
+
+{% block content %}
+  {% for brand in brands %}
+    {% if forloop.first %}  
+      <div class="row">
+    {% endif %}
+      <!-- Column {{ forloop.counter0 }} -->
+      <div class="col-md-3">
+        <!-- Panel {{ forloop.counter0 }} -->
+        <div class="panel panel-default">
+          <!-- Panel header {{ forloop.counter0 }} -->
+          <div class="panel-heading">
+            <a href="{% url 'customer' dash_id brand.id %}"><h3 class="panel-title brand-name">{{ brand.name }}</h3></a>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <!-- IMG -->
+              <div class="col-md-6 img-fans">
+                <img src="{% static "img/fans.png" %}" />
+              </div>
+              <div class="col-md-6">
+                <div class="row number-fans">{{ brand.fans }}</div>
+                <div class="row number-fans-legend">Fãs</div>
+              </div>
+            </div>
+            
+            <hr>
+
+            <div class="row">
+              <div id="line-{{ forloop.counter }}" class="col-md-12">
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+              <div id="donut-{{ forloop.counter }}" class="col-md-12">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {% if forloop.counter0 > 0 and forloop.counter|divisibleby:4 and not forloop.last %}
+      </div>
+      <div class="row">
+    {% endif %}
+    {% if forloop.last %}  
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

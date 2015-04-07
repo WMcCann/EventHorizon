@@ -1,0 +1,1 @@
+MERGE %s AS destination USING #bulk_table AS origin ON %s WHEN MATCHED THEN UPDATE SET %s WHEN NOT MATCHED THEN INSERT %s VALUES %s OUTPUT $action INTO #action_table; DROP TABLE #bulk_table ;

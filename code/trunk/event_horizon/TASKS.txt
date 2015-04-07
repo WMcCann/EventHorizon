@@ -1,0 +1,88 @@
+# Facebook tasks
+
+# every hour
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_advertiserfacebookpage_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_brandfacebookpage_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_campaignfacebookpage_comments
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_advertiserfacebookpage_likes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_brandfacebookpage_likes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_campaignfacebookpage_likes
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_advertiserfacebookpage_shares
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_brandfacebookpage_shares
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_campaignfacebookpage_shares
+
+
+# every 15 minutes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiserfacebookpage_feed
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandfacebookpage_feed
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignfacebookpage_feed
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiserfacebookpage_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandfacebookpage_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignfacebookpage_comments
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiserfacebookpage_likes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandfacebookpage_likes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignfacebookpage_likes
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_weekly
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_days_28
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_dimensions
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_by_message
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_dimensions_by_message
+
+
+# every day
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiserfacebookpage_feed_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandfacebookpage_feed_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignfacebookpage_feed_daily
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_daily_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_weekly_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_days_28_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_insights_facebookpage_dimensions_daily
+
+# Twitter tasks
+
+# every 20 minutes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertisertwitterprofile_timeline
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandtwitterprofile_timeline
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaigntwitterprofile_timeline
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertisertwitterprofile_retweets
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandtwitterprofile_retweets
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaigntwitterprofile_retweets
+
+
+# every day
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertisertwitterprofile_timeline_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandtwitterprofile_timeline_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaigntwitterprofile_timeline_daily
+
+
+# Youtube tasks
+
+# every hour
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_advertiseryoutubechannel_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_brandyoutubechannel_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py update_campaignyoutubechannel_comments
+
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiseryoutubechannel_videos
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandyoutubechannel_videos
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignyoutubechannel_videos
+
+
+# every 15 minutes
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiseryoutubechannel_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandyoutubechannel_comments
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignyoutubechannel_comments
+
+
+# every day
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_advertiseryoutubechannel_videos_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_brandyoutubechannel_videos_daily
+python C:\inetpub\www.eventhorizon.wmccann.com\manage.py load_campaignyoutubechannel_videos_daily

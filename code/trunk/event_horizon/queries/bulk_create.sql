@@ -1,0 +1,1 @@
+CREATE TABLE #bulk_table ( %s ) ; CREATE TABLE #action_table ( action NVARCHAR(255) ) ;

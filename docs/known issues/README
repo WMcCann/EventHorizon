@@ -1,0 +1,26 @@
+# README
+
+This document was created to explain known issues and how to workaround them.
+
+adspygoogle - SOLVED
+===========
+
+This library has so many issues when you wanna install it on Windows.
+
+When we exec pip install adspygoogle, it will install some dependencies like pyxml and celementtree, but i have no F****CKING ideia why, this shit returns always the same error of gcc compiling.
+
+So use the adspygoogle-1.1.4.tar.gz like:
+
+python setup.py install --no_PyXML --no_cElementTree
+
+    SOLUTION
+    ========
+
+    Remove adspygoogle
+
+    pip uninstall adspygoogle
+
+    Install new package googleads
+
+    pip install googleads
+    (https://github.com/googleads/googleads-python-lib)

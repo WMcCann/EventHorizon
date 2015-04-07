@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} > {{ brand.name }}{% endblock %}
+
+{% block css %}
+  <link href="{% static "css/dashboard.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block js %}
+  <script src="{% static "lib/highcharts/js/highcharts.js" %}"></script>
+  <script src="{% static "lib/highcharts/js/modules/exporting.js" %}"></script>
+  <script src="{% static "js/dash.js" %}"></script>
+  <script type="text/javascript">
+    jQuery(function () {
+        // Line chart
+        jQuery('#customer-line').highcharts({
+            credits: {
+                enabled: false
+            },
+            chart: {
+                height: 300,
+                type: 'line'
+            },
+            title: {
+                text: 'Interações'
+            },
+            xAxis: {
+                categories: [
+                    {% for category in data.interaction.categories reversed %}
+                      {% if not forloop.last %}
+                        '{{ category }}',
+                      {% else %}
+                        '{{ category }}'
+                      {% endif %}
+                    {% endfor %}
+                    ],
+
+                labels: {
+                    rotation: -90
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: null
+                },
+                labels: false
+            },
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            series: [
+                {
+                    name: 'Facebook',
+                    data: [
+                      {% for serie in data.interaction.series.facebook reversed %}
+                        {% if not forloop.last %}
+                          {{ serie }},
+                        {% else %}
+                          {{ serie }}
+                        {% endif %}
+                      {% endfor %}
+                    ]
+                },{
+                    name: 'Twitter',
+                    data: [
+                      {% for serie in data.interaction.series.twitter reversed %}
+                        {% if not forloop.last %}
+                          {{ serie }},
+                        {% else %}
+                          {{ serie }}
+                        {% endif %}
+                      {% endfor %}
+                    ]
+                },{
+                    name: 'Youtube',
+                    data: [
+                      {% for serie in data.interaction.series.youtube reversed %}
+                        {% if not forloop.last %}
+                          {{ serie }},
+                        {% else %}
+                          {{ serie }}
+                        {% endif %}
+                      {% endfor %}
+                    ]
+                }]
+        });
+
+        // Column chart
+        jQuery('#customer-column').highcharts({
+            credits: {
+                enabled: false
+            },
+            chart: {
+                height: 300,
+                type: 'column'
+            },
+            title: {
+                text: 'Base de Fãs'
+            },
+            xAxis: {
+                categories: [
+                    {% for category in data.evolution.categories %}
+                      {% if not forloop.last %}
+                        '{{ category|date:"M" }}',
+                      {% else %}
+                        '{{ category|date:"M" }}'
+                      {% endif %}
+                    {% endfor %}
+                    ],
+
+                labels: {
+                    rotation: -90
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: null
+                },
+                labels: false
+            },
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+            },
+            series: [
+                {
+                    name: 'Facebook',
+                    data: [
+                      {% for serie in data.evolution.series.facebook %}
+                        {% if not forloop.last %}
+                          {{ serie }},
+                        {% else %}
+                          {{ serie }}
+                        {% endif %}
+                      {% endfor %}
+                    ]
+                },{
+                    name: 'Twitter',
+                    data: [
+                      {% for serie in data.evolution.series.twitter %}
+                        {% if not forloop.last %}
+                          {{ serie }},
+                        {% else %}
+                          {{ serie }}
+                        {% endif %}
+                      {% endfor %}
+                    ]
+                },{
+                    name: 'Youtube',
+                    data: [
+                      {% for serie in data.evolution.series.youtube %}
+                        {% if not forloop.last %}
+                          {{ serie }},
+                        {% else %}
+                          {{ serie }}
+                        {% endif %}
+                      {% endfor %}
+                    ]
+                }]
+        });
+    });
+  </script>
+{% endblock %}
+
+{% block menu %}
+  <li id="menu-select-brand"><a href="{% url 'select_brand' %}">Selecionar Marca</a></li>
+  <li id="menu-dashboard"><a href="{% url 'dashboard' dash_id %}">Dashboard</a></li>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+
+  <!-- Column -->
+  <div class="col-md-4 brand-logo">
+    {% if brand.name|lower|slice:":9" == 'chevrolet' %}
+      <img src="{% static "img/customers/chevrolet.png" %}" width="270" />
+    {% else %}
+      <span class="brand-logo brand-w-img">{{ brand.name }}</span>
+    {% endif %}
+  </div>
+  <div class="col-md-8">
+    {% for sn, value in data.socialnetwork.items %}
+      <div class="col-md-4">
+        <!-- Panel -->
+        <div class="panel panel-default">
+          <!-- Panel header -->
+          <div class="panel-heading">
+            <h3 class="panel-title social-name">{{ sn }}</h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <!-- IMG -->
+              <div class="col-md-6 img-fans">
+                <img src="{% static "img/" %}{{ sn|lower }}.png" />
+              </div>
+              <div class="col-md-6">
+                <div class="row number-fans">{{ value }}</div>
+                <div class="row number-fans-legend">Fãs</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<!-- line chart -->
+<div id="customer-line" class="row">
+</div>
+
+<div id="customer-column" class="row">
+</div>
+
+{% endblock %}
