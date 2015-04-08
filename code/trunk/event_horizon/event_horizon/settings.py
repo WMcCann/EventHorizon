@@ -10,23 +10,17 @@ PROJECT_ROOT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    ('Johann Vivot', 'Johann.Vivot@wmccann.com'),
-)
+ADMINS = ()
 
 MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-        'OPTIONS': {},
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(PROJECT_ROOT_PATH, 'db.sqlite3'),
     }
 }
+
 
 ALLOWED_HOSTS = []
 
@@ -124,11 +118,6 @@ LOGGING = {
         },
     }
 }
-
-try:
-    from development_config import *
-except ImportError:
-    pass
 
 try:
     from production_config import *
