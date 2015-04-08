@@ -1,0 +1,691 @@
+{
+    "SERVICOS DE TELECOMUNICACAO": [{
+        "category": "INSTITUCIONAL TELECOM CORP"
+    }, {
+        "category": "INSTITUCIONAL TELECOM FISICA"
+    }, {
+        "category": "LINHA TELECOMUNICACOES"
+    }, {
+        "category": "TECNOLOGIA TELECOMUNICACAO"
+    }, {
+        "category": "TELECOM FIXA CORP"
+    }, {
+        "category": "TELECOM FIXA E MOVEL CORP"
+    }, {
+        "category": "TELECOM FIXA E MOVEL FISICA"
+    }, {
+        "category": "TELECOM FIXA FISICA"
+    }, {
+        "category": "TELECOM MOVEL CORP"
+    }, {
+        "category": "TELECOM MOVEL FISICA"
+    }, {
+        "category": "VAREJO TELECOMUNICACOES FIXA"
+    }, {
+        "category": "VAREJO TELECOMUNICACOES MOVEL"
+    }],
+    "PRODUTOS USO PESSOAL": [{
+        "category": "INSTITUC PRODS USO PESSOAL"
+    }, {
+        "category": "MALAS BOLSAS CINTOS E AFINS"
+    }, {
+        "category": "OTICA"
+    }, {
+        "category": "OUTROS USO PESSOAL"
+    }, {
+        "category": "PRODUTOS TERAPEUTICOS"
+    }, {
+        "category": "PUERICULTURA"
+    }, {
+        "category": "RELOGIOS JOIAS E BIJOUTERIAS"
+    }],
+    "SORTEIOS LOTERIAS E CASAS JOGO": [{
+        "category": "CARNETS E CARTELAS"
+    }, {
+        "category": "CASAS DE JOGO BINGOS CASSINOS"
+    }, {
+        "category": "INSTITUC SORTEIOS LOTERIAS"
+    }, {
+        "category": "LOTERIAS"
+    }],
+    "HIGIENE DOMESTICA": [{
+        "category": "INSETICIDAS DOMESTICOS"
+    }, {
+        "category": "INSTITUC HIGIENE DOMESTICA"
+    }, {
+        "category": "LIMPEZA DE LOUCAS"
+    }, {
+        "category": "LIMPEZA DE PISOS"
+    }, {
+        "category": "LIMPEZA DE VESTUARIO"
+    }, {
+        "category": "LIMPEZA EM GERAL"
+    }, {
+        "category": "LINHA HIGIENE DOMESTICA"
+    }, {
+        "category": "OUTROS HIGIENE DOMESTICA"
+    }, {
+        "category": "PAPEL HIGIENICO"
+    }],
+    "TABACOS": [{
+        "category": "ARTIGOS PARA FUMANTES"
+    }, {
+        "category": "CIGARROS"
+    }, {
+        "category": "FUMO E CHARUTOS"
+    }, {
+        "category": "INSTITUC TABACOS"
+    }, {
+        "category": "LINHA TABACOS"
+    }],
+    "VEICULOS PECAS E ACESSORIOS": [{
+        "category": "ACESSORIOS PARA VEICULOS"
+    }, {
+        "category": "AVIOES HELICOPTEROS E AFINS"
+    }, {
+        "category": "BARCOS MOTORES E ACES NAUTICOS"
+    }, {
+        "category": "EQUIPAMENTO E ACES SOM AUTO"
+    }, {
+        "category": "INSTITUC VEICULOS PECAS E ACES"
+    }, {
+        "category": "LINHA PECAS ACESSORIO VEICULOS"
+    }, {
+        "category": "LINHA VEICULOS"
+    }, {
+        "category": "MOTOCICLETAS E CICLOMOTORES"
+    }, {
+        "category": "OUTROS VEICULOS"
+    }, {
+        "category": "PECAS PARA VEICULOS"
+    }, {
+        "category": "PNEUS"
+    }, {
+        "category": "PRODS CONSERVACAO VEICULOS"
+    }, {
+        "category": "VAREJO MONTADORA"
+    }, {
+        "category": "VEICULOS CARGA"
+    }, {
+        "category": "VEICULOS COMERCIAIS"
+    }, {
+        "category": "VEICULOS PASSEIO"
+    }, {
+        "category": "VEICULOS UTILITARIOS"
+    }],
+    "INFORMATICA": [{
+        "category": "COMPUTADORES PESSOAIS"
+    }, {
+        "category": "IMPRESSORAS E MULTIFUNCIONAIS"
+    }, {
+        "category": "INSTITUC INFORMATICA"
+    }, {
+        "category": "OUTROS HARDWARE"
+    }, {
+        "category": "SOFTWARE"
+    }, {
+        "category": "TABLETS"
+    }, {
+        "category": "TECNOLOGIA INFORMATICA"
+    }],
+    "MIDIA": [{
+        "category": "EXIBIDORAS"
+    }, {
+        "category": "INSTITUC MIDIA"
+    }, {
+        "category": "MIDIA ELETRONICA"
+    }, {
+        "category": "MIDIA IMPRESSA"
+    }, {
+        "category": "MIDIA ONLINE"
+    }, {
+        "category": "OUTRAS MIDIAS"
+    }],
+    "MULTI SETORIAL": [{
+        "category": "MULTI CATEGORIAS"
+    }],
+    "BRINQUEDOS E ACESSORIOS": [{
+        "category": "BICICLETAS TRICICLOS E AFINS"
+    }, {
+        "category": "BONECAS E ACESSORIOS DE BONECA"
+    }, {
+        "category": "FIGURAS DE ACAO E ACESSORIOS"
+    }, {
+        "category": "GAMES ELETRONICOS"
+    }, {
+        "category": "INSTITUC BRINQUEDOS E ACESSOR"
+    }, {
+        "category": "JOGOS E QUEBRA CABECAS"
+    }, {
+        "category": "LINHA BRINQUEDOS E ACESSORIOS"
+    }, {
+        "category": "OUTROS BRINQUEDOS"
+    }, {
+        "category": "PELUCIA"
+    }, {
+        "category": "PRIMEIRA INFANCIA PRE ESCOLAR"
+    }, {
+        "category": "RODAS E ACESSORIOS"
+    }],
+    "ESCRITORIO E PAPELARIA": [{
+        "category": "ARTIGOS PAPELARIA E ESCRITORIO"
+    }, {
+        "category": "EQUIPAMENTO ESCRITORIO"
+    }, {
+        "category": "INSTITUC ESCRITORIO  PAPELARIA"
+    }, {
+        "category": "LINHA ESCRITORIO PAPELARIA"
+    }, {
+        "category": "OUTROS ESCRITORIO E PAPELARIA"
+    }],
+    "MERCADO FINANCEIRO E SEGUROS": [{
+        "category": "CARTOES DE CREDITO E DEBITO"
+    }, {
+        "category": "CREDITOS"
+    }, {
+        "category": "DIVERSOS MERCADO FINANCEIRO"
+    }, {
+        "category": "INSTITUC MERCADO FINANCEIRO"
+    }, {
+        "category": "INVESTIMENTOS"
+    }, {
+        "category": "PRODUTOS SECURITARIOS"
+    }, {
+        "category": "SERVICOS BANCARIOS"
+    }, {
+        "category": "TITULOS DE CAPITALIZACAO"
+    }],
+    "ELETRO ELETRONICOS": [{
+        "category": "APARELHO TELEFONICO FIXO"
+    }, {
+        "category": "APARELHO TELEFONICO MOVEL"
+    }, {
+        "category": "APARELHOS DE SOM E ACESSORIOS"
+    }, {
+        "category": "ELETRODOMEST LINHA BRANCA"
+    }, {
+        "category": "ELETRODOMESTICOS"
+    }, {
+        "category": "EQUIPAMENTO TELEFONICO FIXO"
+    }, {
+        "category": "EQUIPAMENTO TELEFONICO MOVEL"
+    }, {
+        "category": "FOTOGRAFIA E CINEMA"
+    }, {
+        "category": "INSTITUC ELETRO ELETRONICOS"
+    }, {
+        "category": "LINHA ELETRO ELETRONICOS"
+    }, {
+        "category": "OUTROS ELETRO ELETRONICOS"
+    }, {
+        "category": "TELEVISAO VIDEO E DVD"
+    }],
+    "SERVICOS PUBLICOS E SOCIAIS": [{
+        "category": "ASSOCIACOES DE CLASSE"
+    }, {
+        "category": "CAMPANHAS BENEFICENTES SOCIAIS"
+    }, {
+        "category": "CAMPANHAS PUBLICAS"
+    }, {
+        "category": "OUTROS SERV PUBLICOS E SOCIAIS"
+    }],
+    "BEBIDAS": [{
+        "category": "AGUA MINERAL"
+    }, {
+        "category": "AGUARDENTES"
+    }, {
+        "category": "ALCOOLICOS DESTILADOS"
+    }, {
+        "category": "BEBIDAS ENERGETICAS"
+    }, {
+        "category": "CAFE E CHA"
+    }, {
+        "category": "CERVEJAS"
+    }, {
+        "category": "INSTITUC BEBIDAS"
+    }, {
+        "category": "LINHA BEBIDAS"
+    }, {
+        "category": "OUTRAS BEBIDAS ALCOOLICAS"
+    }, {
+        "category": "OUTROS BEBIDAS"
+    }, {
+        "category": "REFRESCOS"
+    }, {
+        "category": "REFRIGERANTES"
+    }, {
+        "category": "SUCOS"
+    }, {
+        "category": "VINHOS CHAMPANHE E ESPUMANTE"
+    }],
+    "AGROPECUARIA": [{
+        "category": "ACESSORIOS ANIMAIS PET"
+    }, {
+        "category": "AGROPECUARIA OUTROS"
+    }, {
+        "category": "ASSOCIACAO COOP AGROPECUARIA"
+    }, {
+        "category": "CRIACAO ANIMAIS PET"
+    }, {
+        "category": "CRIACAO ANIMAIS PRODUCAO"
+    }, {
+        "category": "DEFENSIVO AGRICOLA"
+    }, {
+        "category": "FLORICULTURA E JARDINAGEM"
+    }, {
+        "category": "HIGIENE ANIMAIS PET"
+    }, {
+        "category": "HORTICULTURA"
+    }, {
+        "category": "INSTITUC AGROPECUARIA"
+    }, {
+        "category": "INSUMOS PRODUTOS AGRICOLAS"
+    }, {
+        "category": "LEILAO ANIMAL"
+    }, {
+        "category": "LINHA AGROPECUARIA"
+    }, {
+        "category": "LINHA PRODUTOS ANIMAIS PET"
+    }, {
+        "category": "MEDICAMENTO PECUARIA"
+    }, {
+        "category": "RACAO E ALIMENTO ANIMAIS PET"
+    }, {
+        "category": "RACOES PECUARIA"
+    }, {
+        "category": "SAUDE ANIMAIS PET"
+    }, {
+        "category": "TRATORES E MAQS AGROPECUARIA"
+    }],
+    "CULTURA LAZER ESPORTE TURISMO": [{
+        "category": "ALBUNS E FIGURINHAS"
+    }, {
+        "category": "ART E EQUIPAMENTOS ESPORTIVOS"
+    }, {
+        "category": "BARES CASAS NOTURNAS E AFINS"
+    }, {
+        "category": "CLUBES LOCAIS PRATICA ESPORTE"
+    }, {
+        "category": "CONGRESSOS SEMINARIOS E AFINS"
+    }, {
+        "category": "DESTINACOES TURISMO E CAMPINGS"
+    }, {
+        "category": "EDITORAS E PUBLICACOES"
+    }, {
+        "category": "EVENTOS ESPORTIVOS"
+    }, {
+        "category": "EVENTOS SOCIAIS E CULTURAIS"
+    }, {
+        "category": "EXCURSOES E VIAGENS"
+    }, {
+        "category": "GRAV FONOGRAFICAS E ESTUDIOS"
+    }, {
+        "category": "HOTEIS MOTEIS E POUSADAS"
+    }, {
+        "category": "INSTITUC CULTURA LAZER ESP TUR"
+    }, {
+        "category": "INSTRUMENTOS MUSICAIS E AFINS"
+    }, {
+        "category": "MUSEUS E CENTROS CULTURAIS"
+    }, {
+        "category": "OUTROS CULTURA E LAZER"
+    }, {
+        "category": "PARQUES CIRCOS E CENTROS LAZER"
+    }, {
+        "category": "PROD CINEMATOGRAFICAS ESTUDIOS"
+    }],
+    "BENS E SERVICOS INDUSTRIAIS": [{
+        "category": "EQUIPAMENTO CARGA E TRANSPORTE"
+    }, {
+        "category": "EQUIPAMENTO E MAT CONSTRUCAO"
+    }, {
+        "category": "INSTITUC BENS INDUSTRIAIS"
+    }, {
+        "category": "LINHA DE BENS INDUSTRIAIS"
+    }, {
+        "category": "MAQUINAS E EQUIPS INDUSTRIAIS"
+    }, {
+        "category": "MATERIAS PRIMAS"
+    }, {
+        "category": "METALURGIA E SIDERURGIA"
+    }, {
+        "category": "OUTRAS INDUSTRIAS"
+    }, {
+        "category": "PAPEL E CELULOSE"
+    }],
+    "PETROLEIRO E COMBUSTIVEIS": [{
+        "category": "COMBUSTIVEIS E LUBRIFICANTES"
+    }, {
+        "category": "INST PETROLEIRO E COMBUSTIVEIS"
+    }, {
+        "category": "SERVICOS COMBUSTIVEIS"
+    }],
+    "ALIMENTACAO": [{
+        "category": "ACUCARES E ADOCANTES"
+    }, {
+        "category": "ADITIVOS PARA O LEITE"
+    }, {
+        "category": "ALIMENTOS INFANTIS"
+    }, {
+        "category": "BALAS DROPS E GOMA DE MASCAR"
+    }, {
+        "category": "BISCOITOS E BOLACHAS"
+    }, {
+        "category": "CARNES AVES E DERIVADOS"
+    }, {
+        "category": "CEREAIS E FARINACEOS"
+    }, {
+        "category": "CEREAIS EM BARRA"
+    }, {
+        "category": "CEREAIS MATINAIS"
+    }, {
+        "category": "CHOCOLATES"
+    }, {
+        "category": "CONDIMENTOS"
+    }, {
+        "category": "DERIVADOS DE TOMATE"
+    }, {
+        "category": "DOCES E SOBREMESAS"
+    }, {
+        "category": "ENLATADOS E CONSERVAS"
+    }, {
+        "category": "INSTITUC ALIMENTACAO"
+    }, {
+        "category": "IOGURTES"
+    }, {
+        "category": "LEITES PUROS E ADITIVADOS"
+    }, {
+        "category": "LINHA ALIMENTARES"
+    }, {
+        "category": "MARGARINAS E MANTEIGAS"
+    }, {
+        "category": "MASSAS ALIMENTICIAS E REFRIGER"
+    }, {
+        "category": "MOLHOS"
+    }, {
+        "category": "OLEOS AZEITES E AFINS"
+    }, {
+        "category": "OUTROS ALIMENTACAO"
+    }, {
+        "category": "PANIFICACAO E CONFEITARIA"
+    }, {
+        "category": "PRODS A BASE DE COCO"
+    }, {
+        "category": "QUEIJOS"
+    }, {
+        "category": "REF PRONTAS E SEMI PRONTAS"
+    }, {
+        "category": "SNACKS E SALGADINHOS"
+    }, {
+        "category": "SOPAS"
+    }, {
+        "category": "SORVETES"
+    }, {
+        "category": "TEMPEROS"
+    }],
+    "COMERCIO VAREJO": [{
+        "category": "AUTO REVENDAS CONCESSIONARIAS"
+    }, {
+        "category": "CENTROS COMERCIAIS"
+    }, {
+        "category": "COM ALIMENTARES E BEBIDAS"
+    }, {
+        "category": "COM EL ELETR E ART E EQ INFORM"
+    }, {
+        "category": "COM EQUIP ARTIGOS AGROPECUARIA"
+    }, {
+        "category": "COM MAT CONSTRUCAO ACABAMENTO"
+    }, {
+        "category": "COM MATERIAL ESPORTIVO"
+    }, {
+        "category": "COM PAPELARIA LIVROS DISCOS"
+    }, {
+        "category": "COM PECA SERV CONCESSIONARIAS"
+    }, {
+        "category": "COM PRODS E ACESS VEICULOS"
+    }, {
+        "category": "COM PRODS E ARTIGOS INFANTIS"
+    }, {
+        "category": "COM PRODS USO PESSOAL"
+    }, {
+        "category": "COM PRODUTOS CASA E DECORACAO"
+    }, {
+        "category": "COM PRODUTOS FARMACEUTICOS"
+    }, {
+        "category": "COM VEICULOS E ACESS NAUTICA"
+    }, {
+        "category": "COM VESTUARIO CALCADOS E ACESS"
+    }, {
+        "category": "E COMMERCE"
+    }, {
+        "category": "FARMACIAS E DROGARIAS"
+    }, {
+        "category": "FEIRAS COMERCIAIS E LEILOES"
+    }, {
+        "category": "HOME CENTER"
+    }, {
+        "category": "INSTITUC COMERCIO VAREJO"
+    }, {
+        "category": "LOJAS DE CONVENIENCIA"
+    }, {
+        "category": "LOJAS DE DEPARTAMENTO"
+    }, {
+        "category": "MOTO REVENDAS CONCESSIONARIAS"
+    }, {
+        "category": "OUTRAS LOJAS"
+    }, {
+        "category": "OUTROS TIPOS DE COMERCIO"
+    }, {
+        "category": "SUPER HIPERMERCADOS ATACADISTA"
+    }, {
+        "category": "TELEVENDAS VENDAS PELO CORREIO"
+    }],
+    "CONSTRUCAO E ACABAMENTO": [{
+        "category": "CONSTRUCAO ESPECIAL"
+    }, {
+        "category": "EQUIPAMENTO RESIDENCIAL"
+    }, {
+        "category": "EQUIPAMENTO SEGURANCA"
+    }, {
+        "category": "FERRAMENTAS E AFINS"
+    }, {
+        "category": "INSTITUC CONSTRUCAO ACABAMENTO"
+    }, {
+        "category": "MATERIAIS E EQUIPS ELETRICOS"
+    }, {
+        "category": "MATERIAL HIDRAULICO SANITARIO"
+    }, {
+        "category": "OUTROS ARTIGOS ACABAMENTO"
+    }, {
+        "category": "OUTROS MATERIAIS CONSTRUCAO"
+    }, {
+        "category": "REVESTIMENTO PISOS E PAREDES"
+    }, {
+        "category": "TINTAS E VERNIZES CONSTRUCAO"
+    }],
+    "FARMACEUTICA": [{
+        "category": "INSTITUC FARMACEUTICA"
+    }, {
+        "category": "LINHA FARMACEUTICA"
+    }, {
+        "category": "MEDICAMENTO APARELHO DIGESTIVO"
+    }, {
+        "category": "MEDICAMENTO DORES EM GERAL"
+    }, {
+        "category": "MEDICAMENTO GRIPE E RESFRIADO"
+    }, {
+        "category": "MEDICAMENTO TRATAMENTO PELE"
+    }, {
+        "category": "OUTROS FARMACEUTICA"
+    }, {
+        "category": "OUTROS MEDICAMENTOS"
+    }, {
+        "category": "OUTROS ODONTOLOGIA"
+    }, {
+        "category": "PRODS PARA EMAGRECIMENTO"
+    }, {
+        "category": "PRODS PARA PRONTO SOCORRO"
+    }, {
+        "category": "TONICO FORTIFICANTE E VITAMINA"
+    }, {
+        "category": "TRATAMENTO ETICO"
+    }],
+    "VESTUARIO E TEXTIL": [{
+        "category": "CALCADOS"
+    }, {
+        "category": "CALCADOS ESPORTIVOS"
+    }, {
+        "category": "CALCADOS ORTOPEDICOS E AFINS"
+    }, {
+        "category": "CAMA MESA E BANHO"
+    }, {
+        "category": "FIOS E TECIDOS VESTUARIO"
+    }, {
+        "category": "INSTITUC VESTUARIO E TEXTIL"
+    }, {
+        "category": "LINHA VESTUARIO E TEXTIL"
+    }, {
+        "category": "MEIAS EM GERAL"
+    }, {
+        "category": "MODA INFANTIL"
+    }, {
+        "category": "MODA INTIMA FEMININA"
+    }, {
+        "category": "MODA INTIMA INFANTIL"
+    }, {
+        "category": "MODA INTIMA MASCULINA"
+    }, {
+        "category": "MODA PRAIA"
+    }, {
+        "category": "OUTROS VESTUARIO  E TEXTIL"
+    }, {
+        "category": "SANDALIAS E CHINELOS"
+    }, {
+        "category": "VESTUARIO EM GERAL"
+    }, {
+        "category": "VESTUARIO ESPORTIVO"
+    }, {
+        "category": "VESTUARIO PROFISSIONAL"
+    }],
+    "INTERNET": [{
+        "category": "INSTITUC INTERNET"
+    }],
+    "SERVICOS AO CONSUMIDOR": [{
+        "category": "BENEFICIOS TRABALHADOR"
+    }, {
+        "category": "CORRETORAS SEGUROS E AFINS"
+    }, {
+        "category": "EMPRESAS PUBLICAS E OU CONCESS"
+    }, {
+        "category": "ENSINO ESCOLAR E UNIVERSITARIO"
+    }, {
+        "category": "INSTITUC SERVICOS CONSUMIDOR"
+    }, {
+        "category": "LOCACOES"
+    }, {
+        "category": "MANUTENCAO E REPAROS"
+    }, {
+        "category": "OUTROS SERVICOS CONSUMIDOR"
+    }, {
+        "category": "PROPAGANDA E PUBLICIDADE"
+    }, {
+        "category": "REFEICOES RAPIDAS"
+    }, {
+        "category": "RESTAURANTES E LANCHONETES"
+    }, {
+        "category": "SERVICOS AUTOMOTIVOS E AFINS"
+    }, {
+        "category": "SERVICOS BELEZA"
+    }, {
+        "category": "SERVICOS DE ALIMENTACAO"
+    }, {
+        "category": "SERVICOS EDUCACAO COMPLEMENTAR"
+    }, {
+        "category": "SERVICOS POR TELEFONE"
+    }, {
+        "category": "SERVICOS RELIGIOSOS"
+    }, {
+        "category": "SERVICOS SAUDE"
+    }, {
+        "category": "SERVICOS SEGURANCA"
+    }, {
+        "category": "TRANSPORTE AEREO"
+    }, {
+        "category": "TRANSPORTE CARGA"
+    }, {
+        "category": "TRANSPORTE MARITIMO E TERRESTR"
+    }],
+    "CASA E DECORACAO": [{
+        "category": "ARTIGOS JARDIM PISCINA E PRAIA"
+    }, {
+        "category": "CARPETES E TAPETES"
+    }, {
+        "category": "COLCHOES E TRAVESSEIROS"
+    }, {
+        "category": "CORTINAS E PERSIANAS"
+    }, {
+        "category": "DESCARTAVEIS USO DOMESTICO"
+    }, {
+        "category": "ILUMINACAO RESIDENCIAL"
+    }, {
+        "category": "INSTITUC CASA E DECORACAO"
+    }, {
+        "category": "LINHA CASA E DECORACAO"
+    }, {
+        "category": "MOVEIS COMERCIAIS"
+    }, {
+        "category": "MOVEIS RESIDENCIAIS"
+    }, {
+        "category": "OUTROS MOVEIS"
+    }, {
+        "category": "UTILIDADES DOMESTICAS"
+    }],
+    "MERCADO IMOBILIARIO": [{
+        "category": "CONSTRUCAO E INCORPORACAO"
+    }, {
+        "category": "INSTITUC MERCADO IMOBILIARIO"
+    }, {
+        "category": "LOTEAMENTOS EM GERAL"
+    }, {
+        "category": "OUTROS MERCADO IMOBILIARIO"
+    }],
+    "HIGIENE PESSOAL E BELEZA": [{
+        "category": "ABSORVENTES HIGIENICOS"
+    }, {
+        "category": "COLONIAS E PERFUMES"
+    }, {
+        "category": "DESODORANTES"
+    }, {
+        "category": "FRALDAS EM GERAL"
+    }, {
+        "category": "HIGIENE BUCAL"
+    }, {
+        "category": "HIGIENE DOS PES"
+    }, {
+        "category": "HIGIENE E BELEZA CAPILAR"
+    }, {
+        "category": "HIGIENE INTIMA"
+    }, {
+        "category": "INSTITUC HIG PESSOAL E BELEZA"
+    }, {
+        "category": "LINHA HIGIENE PESSOAL E BELEZA"
+    }, {
+        "category": "MAQUIAGEM"
+    }, {
+        "category": "OUTROS HIGIENE PESSOAL E BELEZ"
+    }, {
+        "category": "PRODS BARBA E DEPILACAO"
+    }, {
+        "category": "PRODS BRONZEAMENTO PROT SOLAR"
+    }, {
+        "category": "PRODS PARA MANICURE E PEDICURE"
+    }, {
+        "category": "SABONETES E ESPUMAS BANHO"
+    }, {
+        "category": "SHAMPOO E CONDICIONADOR"
+    }, {
+        "category": "TRATAMENTO PARA PELE DO CORPO"
+    }, {
+        "category": "TRATAMENTO PARA PELE DO ROSTO"
+    }]
+}
