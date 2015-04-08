@@ -102,7 +102,7 @@ class FacebookClient(object):
             try:
                 self._conn.request('GET', url)
                 response = self._conn.getresponse()
-  
+
                 if not json_response:
                     return response.read()
 
