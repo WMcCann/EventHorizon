@@ -9,8 +9,6 @@ import datetime
 import logging
 
 from urllib import urlencode
-from exceptions import FacebookGenericError, FacebookSessionError
-from services_social.models import FacebookConnection
 
 from tornado import httpclient, ioloop, gen
 
@@ -46,7 +44,6 @@ class FacebookClient(object):
         if tasks:
             ioloop.IOLoop.instance().start()
 
-
     @gen.engine
     def async_get(self, task, **kwargs):
         _id = task.get(u'id')
@@ -63,7 +60,7 @@ class FacebookClient(object):
 
         try:
             response = yield gen.Task(self.async_http_client.fetch, url)
-        except Exception, e:
+        except Exception:
             task[u'response'] = None
         else:
             if response.error:
@@ -82,7 +79,7 @@ class FacebookClient(object):
 
     def _get_auth_params(self):
         if self._access_token:
-            return { 'access_token': self._access_token }
+            return {'access_token': self._access_token}
         else:
             raise Exception(u'You need to authorize.')
 

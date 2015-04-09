@@ -1,4 +1,4 @@
-#!/usr/bin/python
+1#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 from datetime import datetime
@@ -13,7 +13,7 @@ class Country(models.Model):
 
     Country is a model to store all country information.
 
-    e.g. 
+    e.g.
     Country: Brazil
 
     """
@@ -50,7 +50,7 @@ class Company(models.Model):
 
     Company is a model to store all company information.
 
-    e.g. 
+    e.g.
     Company: WMcCann
 
     """
@@ -81,7 +81,6 @@ class Company(models.Model):
         super(Company, self).save(*args, **kwargs)
 
 
-
 class Advertiser(models.Model):
 
     """
@@ -91,7 +90,7 @@ class Advertiser(models.Model):
     Advertiser is a model to store all advertiser information.
     Be careful with our abstracted vision about market and our clients. It'll be defined in company_owner field.
 
-    e.g. 
+    e.g.
     Advertiser: GM
 
     """
@@ -132,7 +131,7 @@ class Sector(models.Model):
 
     Sector is a model to store all economic sector information.
 
-    e.g. 
+    e.g.
     Sector: Agriculture
 
     """
@@ -168,7 +167,7 @@ class Category(models.Model):
 
     Category is a model to store all economic sector's categories information.
 
-    e.g. 
+    e.g.
     Category: Pet Accessories
 
     """
@@ -205,7 +204,7 @@ class Brand(models.Model):
 
     Brand is a model to store all brand information.
 
-    e.g. 
+    e.g.
     Brand: Chevrolet
 
     """
@@ -245,7 +244,7 @@ class Campaign(models.Model):
 
     Campaign is a model to store all campaign information.
 
-    e.g. 
+    e.g.
     Campaign: Find New Roads
 
     """
@@ -285,10 +284,11 @@ class Person(models.Model):
     =========
 
     Person is a model to centralize all person information.
-    It's a vision about our CRM and all kind of information about a person is centralized here.
+    It's a vision about our CRM and all kind of information about a person is
+    centralized here.
     Facebook profile, Twitter profile and so on, all of this will be plugged here.
 
-    e.g. 
+    e.g.
     Person: Johann Vivot
 
     """
@@ -326,7 +326,7 @@ class APIError(models.Model):
 
     APIError is a model to centralize all unexpected information that were come from APIs.
 
-    e.g. 
+    e.g.
     APIError:
     metrics_social
     FacebookMessage
@@ -389,7 +389,7 @@ class APIPagination(models.Model):
 
     APIPagination is a model to store pagination from APIs.
 
-    e.g. 
+    e.g.
     APIPagination:
     metrics_social
     FacebookComments
