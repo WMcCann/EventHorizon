@@ -12,6 +12,8 @@ from urllib import urlencode
 
 from tornado import httpclient, ioloop, gen
 
+from .exceptions import FacebookGenericError
+
 
 class FacebookClient(object):
 
@@ -35,6 +37,8 @@ class FacebookClient(object):
         self.async_queue = set()
         self.async_http_client = httpclient.AsyncHTTPClient()
         self.tasks = {}
+
+        self._version = 'v2.0'
 
     def start_async_tasks(self, tasks, **kwargs):
         self.tasks = tasks
@@ -73,9 +77,16 @@ class FacebookClient(object):
         if not self.async_queue:
             ioloop.IOLoop.instance().stop()
 
+    def _make_path(self, path):
+        return '/{version}{path}'.format(version=self._version, path=path)
+
     def _create_url(self, path, **kwargs):
-        url = '%s://%s%s' % (self._protocol, self._endpoint, path)
-        return '%s?%s' % (url, urlencode(kwargs))
+        url = '{protocol}://{endpoint}{path}?{querystring}'.format(
+            protocol=self._protocol, endpoint=self._endpoint,
+            path=self._make_path(path), querystring=urlencode(kwargs)
+        )
+
+        return url
 
     def _get_auth_params(self):
         if self._access_token:
@@ -162,8 +173,7 @@ class FacebookClient(object):
             'popup': 'true',
             }
 
-        params = urlencode(params)
-        url = 'https://%s/oauth/authorize?%s' % (self._endpoint, params)
+        url = self._create_url('/oauth/authorize', **params)
         return url
 
     def short_lived_token(self, redirect_uri, code):
@@ -174,7 +184,7 @@ class FacebookClient(object):
             'code': code,
             }
 
-        url = '/oauth/access_token'
+        url = self._make_path('/oauth/access_token')
 
         data = self._get(url, params, json_response=False)
         qs = urlparse.parse_qs(data)
@@ -188,7 +198,7 @@ class FacebookClient(object):
             'fb_exchange_token': short_lived_token,
             }
 
-        url = '/oauth/access_token'
+        url = self._make_path('/oauth/access_token')
 
         data = self._get(url, params, json_response=False)
         qs = urlparse.parse_qs(data)
@@ -197,13 +207,13 @@ class FacebookClient(object):
     def me(self):
         params = self._get_auth_params()
 
-        url = '/me'
+        url = self._make_path('/me')
         data = self._get(url, params)
         return data
 
     def accounts(self, user_id):
         params = self._get_auth_params()
-        url = '/%s/accounts' % str(user_id)
+        url = self._make_path('/%s/accounts' % str(user_id))
         data = self._get(url, params)
         return data
 
@@ -214,33 +224,33 @@ class FacebookClient(object):
             url = '/%s/insights/%s/%s' % (str(insights_id), metric, period)
         else:
             url = '/%s/insights/%s' % (str(insights_id), metric)
-        data = self._get(url, params)
+        data = self._get(self._make_path(url), params)
         return data
 
     def feed(self, obj_id, **kwargs):
         params = self._get_auth_params()
         params.update(kwargs)
-        url = '/%s/feed' % str(obj_id)
+        url = self._make_path('/%s/feed' % str(obj_id))
         data = self._get(url, params)
         return data
 
     def likes(self, obj_id, **kwargs):
         params = self._get_auth_params()
         params.update(kwargs)
-        url = '/%s/likes' % str(obj_id)
+        url = self._make_path('/%s/likes' % str(obj_id))
         data = self._get(url, params)
         return data
 
     def comments(self, obj_id, **kwargs):
         params = self._get_auth_params()
         params.update(kwargs)
-        url = '/%s/comments' % str(obj_id)
+        url = self._make_path('/%s/comments' % str(obj_id))
         data = self._get(url, params)
         return data
 
     def obj_id(self, obj_id, **kwargs):
         params = self._get_auth_params()
         params.update(kwargs)
-        url = '/%s' % str(obj_id)
+        url = self._make_path('/%s' % str(obj_id))
         data = self._get(url, params)
         return data

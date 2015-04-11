@@ -26,3 +26,4 @@ tornado==3.1
 tweepy==2.1
 virtualenv==1.6.1
 wsgiref==0.1.2
+nose
