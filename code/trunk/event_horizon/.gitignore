@@ -4,7 +4,4 @@
 *.pid
 *.pyc
 *.db
-event_horizon/development_config.py
-event_horizon/production_config.py
-event_horizon/__production_config.py
 build/*

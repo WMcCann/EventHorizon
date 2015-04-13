@@ -8,6 +8,8 @@ import time
 import datetime
 import logging
 
+from django.conf import settings
+
 from urllib import urlencode
 
 from tornado import httpclient, ioloop, gen
@@ -38,7 +40,7 @@ class FacebookClient(object):
         self.async_http_client = httpclient.AsyncHTTPClient()
         self.tasks = {}
 
-        self._version = 'v2.0'
+        self._version = settings.FACEBOOK_API_VERSION
 
     def start_async_tasks(self, tasks, **kwargs):
         self.tasks = tasks
